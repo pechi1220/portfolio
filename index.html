@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca77f96c3d.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="top_visual"></div>
+    <nav>
+        <div class="wrapper">
+            <ul>
+                <h1>PORTFOLIO</h1>
+            </ul>
+        </div>
+    </nav>
+    <div id="top_visual"></div>
+    <section id="content">
+        <section class="cont_section" id="introduction">
+            <div class="fadein" id="introduction_content">
+                <h2 class="fadein">自己紹介</h2>
+                <p class="fadein" id="text">鹿嶋晃司 2002年1月12日生まれ<br>情報科学専門学校 情報セキュリティ学科 2024年卒業予定<br><br>生粋の競技好きで、ゲームやスポーツなどの競技全般を楽しむ<br>趣味はWebサイト作成、ゲーム、PCいじり、デバイス集め、スポーツなど多彩<br><br>お客様により良いWebサイトをお届けしたいと言う強い情熱を持ち<br>コーディングし続ける日々を過ごしている</p>
+            </div>
+            <div class="fadein" id="introduction_img">
+                <a href="./img/IMG_9744.jpg" data-lightbox="nigaoe"><img src="./img/IMG_9744.jpg" alt="似顔絵"></a>
+            </div>
+        </section>
+
+        <section class="cont_section" id="belief">
+            <div class="fadein" id="introduction_content">
+                <h2 class="fadein" id="belief_line">信念</h2><br><br>
+                <p class="fadein" id="belief_text"><span class="headline lineAnimation">気力は実力に勝る</span><br><br><span class="headline lineAnimation">努力は才能に勝る</span><br><br><br>この信念を基に日々の精進を怠らず、お客様へより良いWebサイトをお届けし続けます</p>
+            </div>
+        </section>
+
+        <section class="cont_section" id="skil">
+            <div class="fadein" id="skil_content">
+                <h2 class="fadein">スキル</h2>
+                <p class="fadein" id="text">PHPが得意<br>Larabelなどのフレームワークは触れてこなかったが、学習し始めた<br><br>HTML/CSS/Jsは思った様なサイトを作るぐらいのことはできる<br>Javaに関しては苦手意識が多少ある</p>
+            </div>
+            <div class="fadein" id="canvas-container">
+                <canvas id="myRadarChart" height="100px" width="100px"></canvas>
+            </div>
+        </section>
+
+        <section class="cont_section" id="works">
+            <div class="fadein" id="works_content1">
+                    <div class="works_text">
+                        <h2 class="fadein">作品</h2>
+                        <p class="fadein" id="text">
+                            <a href="https://r03isc2t736.sub.jp/SCOREnew.project/SCOREnew.php" id="works_text_siteURL" target="_blank" title="別タブで開く">OSUmania譜面定数</a><br><br>
+                            友人から依頼されて０からのコーディングで完成させたサイト<br>
+                            このサイトでは音楽ゲームの譜面をダウンロードできる<br><br>
+
+                            デザインの指定はなく、自由な開発だった為<br>
+                            手掛けたことのないカジュアルな見た目に仕上げることに注力した<br><br>
+
+                            苦労した点は、ファイルサイズの大きい画像やファイルを扱うときに<br>
+                            formへ記載しなければならない「enctype="multipart/form-data"」に<br>
+                            気づけず、なぜ受け取れないのか悩み続け苦労した<br><br>
+
+                            このサイトを作成してバックエンド系言語の楽しさに目覚めた<br>
+                            これからもこのサイトはアップデートを続けて行き真の完成に<br>
+                            一歩一歩近づいていきたいと思っている
+                        </p>
+                    </div>
+                    <div class="works_img" id="works_img_top">
+                        <div>
+                            <p id="works_img_alt">利用者が譜面をDLできる画面</p>
+                            <a href="./img/SCOREnew.png" data-lightbox="score"><img src="./img/SCOREnew.png" data-lightbox="test" alt="OSUmania譜面定数の利用者が譜面をDLできるページの画像"  id="works_img_animation"></a>
+                        </div>
+                        <div>
+                            <p id="works_img_alt">管理者が譜面情報を登録する画面</p>
+                            <a href="./img/SCOREnew2.png" data-lightbox="score"><img src="./img/SCOREnew2.png" data-lightbox="test" alt="OSUmania譜面定数の管理者が譜面情報を登録する画面の画像"  id="works_img_animation"></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="fadein" id="works_content2">
+                <div class="works_text">
+                    <p class="fadein" id="text">
+                        <a href="https://r03isc2t919.sub.jp/%E5%B2%A9%E6%89%8B%E7%9C%8C%E3%81%AE%E7%A9%B4%E5%A0%B4%E3%81%8A%E5%AF%BA3%E9%81%B8/index.html" id="works_text_siteURL" target="_blank" title="別タブで開く">岩手県の穴場お寺3選</a><br><br>
+                        Jsの勉強の際に思いつきで作ったサイト<br>
+                        このサイトでは、岩手県の穴場お寺を3つ紹介している<br><br>
+
+                        工夫した点は、ウィンドウサイズが狭い時はボタンを3つならべて表示<br>
+                        するのではなく、ハンバーガータブを用いて扱いやすいようにした<br><br>
+
+                        苦労した点は初めてのJsの使用だった為、基礎の基礎から分からず<br>
+                        動的なサイトを作るということ自体に苦労した<br><br>
+
+                        このサイトを作成して動的なサイトを作る楽しさと難しさを知ることができた<br>
+                        また、Jsの基礎の基礎を学べた
+                    </p>
+                </div>
+                <div class="works_img">
+                    <div>
+                        <p id="works_img_alt">サイト上部 他のお寺への遷移できる</p>
+                        <a href="./img/iwateotera.png" data-lightbox="otera"><img src="./img/iwateotera.png" data-lightbox="test" alt="岩手県の穴場お寺3選の上部の画像" id="works_img_animation"></a>
+                    </div>
+                    <div>
+                        <p id="works_img_alt">サイト下部 お問い合わせ、各情報が確認できる</p>
+                        <a href="./img/iwateotera2.png" data-lightbox="otera"><img src="./img/iwateotera2.png" data-lightbox="test" alt="岩手県の穴場お寺3選の下部の画像" id="works_img_animation"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div>
+            <p>Thanks for reading</p>
+        </div>
+        <div id="footer_icon">
+            <p id="footer_name">Kasima Kouji</p>
+            <ul class="snsbtniti">
+                <li>
+                    <a href="https://twitter.com/pechi1220/with_replies" class="flowbtn10" target="_blank" title="Twitterプロフィールを開く">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discordapp.com/users/378788940171444235" class="flowbtn10" target="_blank" title="discordプロフィールを開く">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="flowbtn10" onclick="copyTextToClipboard('cakk1201025@gn.iwasaki.ac.jp')" title="メールアドレスをコピー">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
